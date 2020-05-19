@@ -3,25 +3,35 @@ package jithin.blogapp;
 public class User {
 
     private int ID;
-    private  String email, password;
+    private  String email;
+    private String username;
+    private String gender;
 
 
-    public  User (int ID, String email, String password){
+    public User(int ID, String email, String username, String gender) {
         this.ID = ID;
         this.email = email;
-        this.password = password;
+        this.username = username;
+        this.gender = gender;
     }
+
     public int getID() {
         return ID;
     }
 
-    public  String getEmail (String email){
-        return  email;
+    public String getEmail() {
+        return email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUsername() {
+        return username;
     }
+
+    public String getGender() {
+        return gender;
+    }
+
+
 
 
 
